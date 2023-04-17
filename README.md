@@ -4,14 +4,16 @@ This script performs a substitution on a JSON file, replacing all non-dictionary
 ## Usage
 To use the script, run the following command in a terminal:
 
-```python substitute.py input.json --depth [depth] output.json```
+```shell
+python3 substitute.py input.json --depth depth output.json
+```
 
 Replace input.json and output.json with the input and output file paths, respectively. The --depth flag is optional and specifies the maximum depth to perform substitution. If not specified, substitution is performed to the full depth.
 
 ## Example
 For example, suppose we have the following input JSON file input.json:
 
-```
+```input.json
 {
     "name": "Muhammad Ali",
     "age": 26,
@@ -28,12 +30,12 @@ For example, suppose we have the following input JSON file input.json:
 To perform the substitution with a maximum depth of 2, run the following command:
 
 
-```
-python substitute.py input.json output.json --depth 2
+```shell
+python3 substitute.py input.json --depth 2 output.json 
 ```
 This produces the following output JSON file output.json:
 
-```
+```output.json
 {
   "name": {
     "_content": "Muhammad Ali",
