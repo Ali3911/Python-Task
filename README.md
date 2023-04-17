@@ -1,15 +1,15 @@
-#JSON Substitution Script
+# JSON Substitution Script
 This script performs a substitution on a JSON file, replacing all non-dictionary values with a dictionary containing the original value and its type. The substitution is performed recursively to a specified depth.
 
-##Usage
+## Usage
 To use the script, run the following command in a terminal:
 
-##css
+## css
 ```python substitute.py input.json --depth [depth] output.json```
 
 Replace input.json and output.json with the input and output file paths, respectively. The --depth flag is optional and specifies the maximum depth to perform substitution. If not specified, substitution is performed to the full depth.
 
-##Example
+## Example
 For example, suppose we have the following input JSON file input.json:
 
 ```
