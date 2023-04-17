@@ -1,0 +1,12 @@
+{
+    "name": "Muhammad Ali",
+    "age": 26,
+    "isMarried": true,
+    "hobbies": ["reading", "swimming", "coding"],
+    "address": {
+        "street": "12 Abc Main St",
+        "city": "Lahore",
+        "state": "Punjab",
+        "zip": "12345"
+    }
+}

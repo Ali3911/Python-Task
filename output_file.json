@@ -1,0 +1,40 @@
+{
+  "name": {
+    "_content": "Muhammad Ali",
+    "_type": "<class 'str'>"
+  },
+  "age": {
+    "_content": 26,
+    "_type": "<class 'int'>"
+  },
+  "isMarried": {
+    "_content": true,
+    "_type": "<class 'bool'>"
+  },
+  "hobbies": {
+    "_content": [
+      "reading",
+      "swimming",
+      "coding"
+    ],
+    "_type": "<class 'list'>"
+  },
+  "address": {
+    "street": {
+      "_content": "12 Abc Main St",
+      "_type": "<class 'str'>"
+    },
+    "city": {
+      "_content": "Lahore",
+      "_type": "<class 'str'>"
+    },
+    "state": {
+      "_content": "Punjab",
+      "_type": "<class 'str'>"
+    },
+    "zip": {
+      "_content": "12345",
+      "_type": "<class 'str'>"
+    }
+  }
+}
