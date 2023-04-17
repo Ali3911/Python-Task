@@ -8,7 +8,7 @@ To use the script, run the following command in a terminal:
 python3 substitute.py input.json --depth depth output.json
 ```
 
-Replace input.json and output.json with the input and output file paths, respectively. The --depth flag is optional and specifies the maximum depth to perform substitution. If not specified, substitution is performed to the full depth.
+Replace input.json and output.json with the input and output file paths, respectively. The --depth flag is specifies the maximum depth to perform substitution. If not specified, no substitution is performed.
 
 ## Example
 For example, suppose we have the following input JSON file input.json:
