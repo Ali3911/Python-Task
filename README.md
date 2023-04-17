@@ -14,14 +14,14 @@ For example, suppose we have the following input JSON file input.json:
 
 ```
 {
-    "name": "John",
-    "age": 30,
+    "name": "Muhammad Ali",
+    "age": 26,
     "isMarried": true,
     "hobbies": ["reading", "swimming", "coding"],
     "address": {
-        "street": "123 Main St",
-        "city": "Anytown",
-        "state": "CA",
+        "street": "12 Abc Main St",
+        "city": "Lahore",
+        "state": "Punjab",
         "zip": "12345"
     }
 }
@@ -36,40 +36,44 @@ This produces the following output JSON file output.json:
 
 ```
 {
-    "name": {
-        "_content": "John",
-        "_type": "<class 'str'>"
+  "name": {
+    "_content": "Muhammad Ali",
+    "_type": "<class 'str'>"
+  },
+  "age": {
+    "_content": 26,
+    "_type": "<class 'int'>"
+  },
+  "isMarried": {
+    "_content": true,
+    "_type": "<class 'bool'>"
+  },
+  "hobbies": {
+    "_content": [
+      "reading",
+      "swimming",
+      "coding"
+    ],
+    "_type": "<class 'list'>"
+  },
+  "address": {
+    "street": {
+      "_content": "12 Abc Main St",
+      "_type": "<class 'str'>"
     },
-    "age": {
-        "_content": 30,
-        "_type": "<class 'int'>"
+    "city": {
+      "_content": "Lahore",
+      "_type": "<class 'str'>"
     },
-    "isMarried": {
-        "_content": true,
-        "_type": "<class 'bool'>"
+    "state": {
+      "_content": "Punjab",
+      "_type": "<class 'str'>"
     },
-    "hobbies": {
-        "_content": ["reading", "swimming", "coding"],
-        "_type": "<class 'list'>"
-    },
-    "address": {
-        "street": {
-            "_content": "123 Main St",
-            "_type": "<class 'str'>"
-        },
-        "city": {
-            "_content": "Anytown",
-            "_type": "<class 'str'>"
-        },
-        "state": {
-            "_content": "CA",
-            "_type": "<class 'str'>"
-        },
-        "zip": {
-            "_content": "12345",
-            "_type": "<class 'str'>"
-        }
+    "zip": {
+      "_content": "12345",
+      "_type": "<class 'str'>"
     }
+  }
 }
 ```
 As we can see, all non-dictionary values have been replaced with a dictionary containing the original value and its type. The substitution has been performed to a depth of 2 on the address dictionary.
