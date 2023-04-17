@@ -4,7 +4,6 @@ This script performs a substitution on a JSON file, replacing all non-dictionary
 ## Usage
 To use the script, run the following command in a terminal:
 
-## css
 ```python substitute.py input.json --depth [depth] output.json```
 
 Replace input.json and output.json with the input and output file paths, respectively. The --depth flag is optional and specifies the maximum depth to perform substitution. If not specified, substitution is performed to the full depth.
